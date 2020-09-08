@@ -1,0 +1,16 @@
+title: ngga-tau-152
+description: hanya untuk belajar
+template:
+  repo: ngga-tau-152-template
+  name: ngga-tau-152
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
